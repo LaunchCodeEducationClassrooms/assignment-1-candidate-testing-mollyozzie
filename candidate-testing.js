@@ -60,6 +60,7 @@ if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()) {
   return grade;
 }
 
+
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
@@ -68,6 +69,8 @@ function runProgram() {
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
+
+correctCandidateAnswers = 0;
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
