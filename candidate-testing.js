@@ -39,7 +39,7 @@ function gradeQuiz(candidateAnswers) {
 //   console.log("Sorry.  That answer is incorrect.")
 // }
 for (let i = 0; i <5; i++) {
-console.log(`\n${i+1})  ${questions[i]}\nYour Answer:  ${candidateAnswers[i]}\nCorrect Answer:  ${correctAnswers[i]}\n`);
+console.log(`${i+1})  ${questions[i]}\nYour Answer:  ${candidateAnswers[i]}\nCorrect Answer:  ${correctAnswers[i]}\n`);
 
 if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()) {
   correctCandidateAnswers++;
@@ -63,7 +63,7 @@ if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()) {
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
-  console.log(`Hello, ${candidateName}.\n`);
+  console.log(`Hello, ${candidateName}.`);
 
   askQuestion();
   gradeQuiz(this.candidateAnswers);
