@@ -56,7 +56,8 @@ if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()) {
     console.log('>>> Status:  PASSED <<<');
   }
   
-
+  correctCandidateAnswers = 0;
+  
   return grade;
 }
 
@@ -69,8 +70,6 @@ function runProgram() {
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
-
-correctCandidateAnswers = 0;
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
